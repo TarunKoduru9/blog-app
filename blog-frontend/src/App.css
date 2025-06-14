@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #16203b;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 2px solid #fff;
+  border-radius: 5px;
+  padding: 2rem;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  border-radius: 10px;
+  border: 2px solid #ffff;
+  padding: 1rem;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.post-card {
+  background: white;
+  color: black;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.post-card h3 {
+  margin-top: 0;
+}
+
+.addpost{
+  text-align: center;
+  color: black;
+}
+
+.editpost{
+  text-align: center;
+  color: black;
+}
+
+
+button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  box-shadow: 0 0 5px cyan;
+  opacity: 0.9;
+}
+
+button.delete {
+  background-color: #16203b;
+  color: #fff;
+}
+
+button.edit {
+  background-color: #16203b;
+  color: #fff;
+}
+
+form {
+  background: white;
+  padding: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+  border-color: #16203b;
+  outline: none;
+}
+
+button.submit {
+  background-color: #16203b;
+  color: white;
+}
+
+.footer{
+  text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  nav {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 0.75rem;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-card {
+    padding: 0.75rem;
+  }
+
+  input, textarea {
+    font-size: 0.95rem;
+  }
+}
